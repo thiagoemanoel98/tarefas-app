@@ -1,10 +1,11 @@
 import firebase from 'firebase/app';
+import {FIREBASE_KEY} from '@env';
 import 'firebase/auth';
 import 'firebase/database';
 
 // Your web app's Firebase configuration
 let firebaseConfig = {
-    apiKey: "AIzaSyC7L_e0Xy1g1xGnVzcc2kStzBOGuV7SB-0",
+    apiKey: FIREBASE_KEY,
     authDomain: "tarefas-73fa4.firebaseapp.com",
     projectId: "tarefas-73fa4",
     storageBucket: "tarefas-73fa4.appspot.com",

@@ -34,7 +34,6 @@ export default function Login({ changeStatus }) {
                 return;
             })
         }
-        alert('Teste');
     }
     
     return (
@@ -52,6 +51,7 @@ export default function Login({ changeStatus }) {
                 style = {styles.input}
                 value = {pass}
                 onChangeText = { (text) => setPass(text) }
+                secureTextEntry={true}
             />
 
             <TouchableOpacity style = {[styles.handleLogin, { backgroundColor: type === 'login' ? '#3ea6f2' : '#141414'}]}
